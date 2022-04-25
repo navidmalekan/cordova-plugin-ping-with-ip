@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-ping-with-ip",
+  "version": "1.0.0",
+  "description": "Cordova Ping Plugin Whit IP",
+  "cordova": {
+    "id": "cordova-plugin-ping-with-ip",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navidmalekan/cordova-plugin-ping-with-ip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/navidmalekan/cordova-plugin-ping-with-ip/issues"
+  },
+  "keywords": [
+    "cordova",
+    "ping",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Navid Mlk",
+  "license": "MIT"
+}

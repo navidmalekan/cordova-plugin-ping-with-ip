@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-ping-with-ip"
+    version="0.3.1">
+    <name>Ping</name>
+    <description>Cordova Ping Plugin With IP</description>
+    <license>MIT</license>
+    <keywords>cordova,ping</keywords>
+    <repo>https://github.com/navidmalekan/cordova-plugin-ping-with-ip.git</repo>
+    <issue>https://github.com/navidmalekan/cordova-plugin-ping-with-ip/issues</issue>
+
+    <js-module src="www/ping.js" name="ping">
+      <clobbers target="Ping" />
+    </js-module>
+
+    <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="Ping">
+          <param name="android-package" value="com.adnofer.cordova.ping.Ping"/>
+        </feature>
+      </config-file>
+      <source-file src="src/android/Ping.java" target-dir="src/com/adnofer/cordova/ping"/>
+    </platform>
+  </plugin>
