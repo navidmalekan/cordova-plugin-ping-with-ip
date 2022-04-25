@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-ping-with-ip",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cordova Ping Plugin Whit IP",
   "cordova": {
     "id": "cordova-plugin-ping-with-ip",
@@ -22,5 +22,13 @@
     "cordova-android"
   ],
   "author": "Navid Mlk",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/navidmalekan/cordova-plugin-ping-with-ip#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

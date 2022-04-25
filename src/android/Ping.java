@@ -1,5 +1,5 @@
 
-package org.tiste.cordova.ping;
+package com.adnofer.cordova.ping;
 
 import java.io.BufferedReader;
 import java.net.InetAddress;

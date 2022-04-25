@@ -1,6 +1,6 @@
 ## Installation
 
-> cordova plugin add https://github.com/t1st3/cordova-plugin-ping-with-ip.git
+> cordova plugin add https://github.com/adnofer/cordova-plugin-ping-with-ip.git
 
 ## Usage
 
