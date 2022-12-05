@@ -40,7 +40,7 @@ public class Ping extends CordovaPlugin {
     return false;
   }
 
-  private static void ping(JSONArray args, CallbackContext callbackContext) {
+  private void ping(JSONArray args, CallbackContext callbackContext) {
     try {
       if (args != null && args.length() > 0) {
         JSONArray resultList = new JSONArray();
