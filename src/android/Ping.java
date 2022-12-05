@@ -29,7 +29,7 @@ public class Ping extends CordovaPlugin {
       cordova.getThreadPool().execute(new Runnable() {
 					public void run() {
 						try {
-							this.ping(args, callbackContext);
+							ping(args, callbackContext);
 						} catch(Exception ex) {
 							callbackContext.error("open failed");
 						}
@@ -40,7 +40,7 @@ public class Ping extends CordovaPlugin {
     return false;
   }
 
-  private void ping(JSONArray args, CallbackContext callbackContext) {
+  private static void ping(JSONArray args, CallbackContext callbackContext) {
     try {
       if (args != null && args.length() > 0) {
         JSONArray resultList = new JSONArray();
