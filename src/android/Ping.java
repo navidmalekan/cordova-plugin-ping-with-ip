@@ -26,7 +26,15 @@ public class Ping extends CordovaPlugin {
   @Override
   public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     if ("getPingInfo".equals(action)) {
-      this.ping(args, callbackContext);
+      cordova.getThreadPool().execute(new Runnable() {
+					public void run() {
+						try {
+							this.ping(args, callbackContext);
+						} catch(Exception ex) {
+							callbackContext.error("open failed");
+						}
+					}
+				});
       return true;
     }
     return false;
